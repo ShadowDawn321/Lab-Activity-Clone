@@ -1,0 +1,39 @@
+	<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<div id="outer">
+		<div id="inner">
+            <form name="form1" id="form1" onsubmit="return validation();">
+
+                    <label>Login: </label>
+                    <input type="text" name="login" placeholder="Log in" required><br>
+                    <label>Password: </label>
+                    <input type="text" name="password" id="password" placeholder="Password" required><br>   
+                    <label>Confirm Pass: </label>
+                    <input type="text" name="confirm password" id="confirm_password" placeholder="Confirm Password" required><br>
+                    <label>Gender: </label>
+
+                    <select id="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+
+                    <label>Email: </label>
+                    <input id="mail" type="email" name="email" placeholder=" Email" ><br>
+					<p id= "errpss"></p>
+                    <p id= "errmail"></p>
+                    <button type="submit" id="Button">Register</button><br>
+					
+            </form>
+        </div>
+    </div>
+</body>
+</html>

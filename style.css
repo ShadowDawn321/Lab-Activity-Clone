@@ -1,0 +1,58 @@
+body{
+  background-color: black;
+}
+
+#outer {
+    width: 455px;
+    height: 255px;
+    text-align: left;
+    background-color:#f7f0f0;
+    padding-top: 7px;
+    margin: auto;
+    border-style: white;
+    position: relative; top:300px;
+    
+  }
+  
+#inner {
+    position: relative;
+    width: 97%;
+    height: 97%;
+    border-color: black;
+    background-color:black;
+    margin:auto;
+  }
+  
+label {
+    width: 100px;
+    display:inline-block;
+  }
+
+#Gender {
+    width: 177px;
+    display:inline-block;
+    
+  }
+  
+form {
+    padding:20px;
+    margin: auto;
+    border:none;
+    position: relative; top:11px;
+    background:rgb(85, 74, 74);
+    color:rgb(255, 255, 255);
+    width: 375px;
+    height: 185px;
+  }
+
+  
+Button {
+    font-weight: bolder;
+    font-size: 21;
+  
+  }
+
+p{
+  font-size: 14px;
+  color: #ffffff;
+}
