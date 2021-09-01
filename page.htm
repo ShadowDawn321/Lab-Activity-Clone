@@ -10,14 +10,14 @@
 <body>
 	<div id="outer">
 		<div id="inner">
-            <form name="form1" id="form1" onsubmit="return validation();">
+            <form name="form1" id="form1" >
 
                     <label>Login: </label>
-                    <input type="text" name="login" placeholder="Log in" required><br>
-                    <label>Password: </label>
-                    <input type="text" name="password" id="password" placeholder="Password" required><br>   
+                    <input type="text" name="login" placeholder="Log in" required>
+                    <label>Password</label>
+                        <input type="password" id="pass1" placeholder="Password" onkeyup="return countChars()" required>
                     <label>Confirm Pass: </label>
-                    <input type="text" name="confirm password" id="confirm_password" placeholder="Confirm Password" required><br>
+                    <input type="password" name="confirm password" id="confirm_password" placeholder="Confirm Password" required><br>
                     <label>Gender: </label>
 
                     <select id="Gender">
@@ -30,7 +30,7 @@
                     <input id="mail" type="email" name="email" placeholder=" Email" ><br>
 					<p id= "errpss"></p>
                     <p id= "errmail"></p>
-                    <button type="submit" id="Button">Register</button><br>
+                    <button type="submit" id="Button" onsubmit="return validation();">Register</button><br>
                     
 					
             </form>

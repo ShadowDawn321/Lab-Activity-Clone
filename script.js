@@ -23,12 +23,23 @@ function validation() {
         
       }
     }
+}
 
-    let y = document.getElementById("mail");
+function passwordStrength(){
+  let y = document.getElementById("mail");
 
       if (mail != email){
         errmail.textContent = "Passwords match";
       }
-    
-  }
+      var pwd1 = document.getElementById("pass1").value.length;
 
+      if(pwd1 <= 5){
+           document.getElementById("charCount").innerHTML = 'Weak';
+      }
+      if(pwd1 > 6){
+           document.getElementById("charCount").innerHTML = 'Medium';
+      }
+      if(pwd1 > 15){
+           document.getElementById("charCount").innerHTML = 'Strong';
+         }
+}
